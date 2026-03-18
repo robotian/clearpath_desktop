@@ -53,6 +53,7 @@ MOVEIT_TOPICS = [
     'query_planner_interface',
     'set_planner_params',
     'trajectory_execution_event',
+    'solution',
     MARKER + 'feedback',
     MARKER + 'get_interactive_markers',
     MARKER + 'update',
@@ -71,7 +72,7 @@ def launch_setup(context, *args, **kwargs):
     # RViz Configuration
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')
     default_config = PathJoinSubstitution(
-        [pkg_clearpath_viz, 'rviz', 'mtc_a300_lite.rviz']
+        [pkg_clearpath_viz, 'rviz', 'moveit.rviz']
     )
 
     context_rviz = default_config.perform(context)

@@ -59,7 +59,7 @@ def generate_launch_description():
 
     arg_rviz_config = DeclareLaunchArgument(
         name='config',
-        default_value='nav2.rviz',
+        default_value='nav2_a300.rviz',
     )
 
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')
@@ -72,7 +72,7 @@ def generate_launch_description():
         PushRosNamespace(namespace),
         Node(package='rviz2',
              executable='rviz2',
-             name='rviz2',
+            #  name='rviz2',
              arguments=['-d', config_rviz],
              parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}],
              remappings=[
