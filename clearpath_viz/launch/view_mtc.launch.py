@@ -72,7 +72,7 @@ def launch_setup(context, *args, **kwargs):
     # RViz Configuration
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')
     default_config = PathJoinSubstitution(
-        [pkg_clearpath_viz, 'rviz', 'moveit.rviz']
+        [pkg_clearpath_viz, 'rviz', 'mtc_a300_lite.rviz']
     )
 
     context_rviz = default_config.perform(context)

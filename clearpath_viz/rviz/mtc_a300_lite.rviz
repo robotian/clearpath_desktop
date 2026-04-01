@@ -5,8 +5,9 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Motion Planning Tasks1
+        - /PlanningScene1
       Splitter Ratio: 0.5
-    Tree Height: 177
+    Tree Height: 494
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Views
@@ -23,21 +24,18 @@ Panels:
     Name: Motion Planning Tasks
     Tasks View:
       property_splitter:
-        - 621
-        - 207
+        - 168
+        - 89
       solution_sorting:
         column: 0
         order: 1
       solutions_splitter:
-        - 303
-        - 152
-      solutions_view_columns:
-        - 40
-        - 60
-        - 50
+        - 459
+        - 229
+      solutions_view_columns: ~
       tasks_view_columns:
-        - 203
-        - 23
+        - 336
+        - 32
         - 23
         - 52
 Visualization Manager:
@@ -61,1046 +59,6 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Acceleration_Scaling_Factor: 0.5
-      Class: moveit_rviz_plugin/MotionPlanning
-      Enabled: true
-      Move Group Namespace: /a300_00036
-      MoveIt_Allow_Approximate_IK: false
-      MoveIt_Allow_External_Program: false
-      MoveIt_Allow_Replanning: false
-      MoveIt_Allow_Sensor_Positioning: false
-      MoveIt_Planning_Attempts: 10
-      MoveIt_Planning_Time: 5
-      MoveIt_Use_Cartesian_Path: false
-      MoveIt_Use_Constraint_Aware_IK: false
-      MoveIt_Workspace:
-        Center:
-          X: 0
-          Y: 0
-          Z: 0
-        Size:
-          X: 2
-          Y: 2
-          Z: 2
-      Name: MotionPlanning
-      Planned Path:
-        Color Enabled: false
-        Interrupt Display: false
-        Links:
-          All Links Enabled: true
-          Expand Joint Details: false
-          Expand Link Details: false
-          Expand Tree: false
-          Link Tree Style: Links in Alphabetic Order
-          arch_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_end_effector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          arm_0_forearm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_gripper_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_left_finger_dist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_left_finger_prox_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_right_finger_dist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_right_finger_prox_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_lower_wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_upper_wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          base_footprint:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          button_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_0_camera_center:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_0_camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_left_camera_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_left_camera_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_right_camera_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_right_camera_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          charger_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          chassis_left_suspension_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          chassis_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          chassis_right_suspension_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          default_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          estop_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          eth_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_hinge_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_bumper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_bumper_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_left_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_left_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_right_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_right_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gps_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          imu_0_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          imu_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_suspension_beam_front_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_suspension_beam_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_suspension_beam_rear_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_suspension_beam_spacer_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lidar2d_0_laser:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lidar2d_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_bumper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_bumper_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_left_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_left_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_right_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_right_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          right_suspension_beam_front_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_suspension_beam_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          right_suspension_beam_rear_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_suspension_beam_spacer_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          top_plate_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          top_plate_mount_a1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_face:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_lidar_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-        Loop Animation: true
-        Robot Alpha: 0.5
-        Robot Color: 150; 50; 150
-        Show Robot Collision: false
-        Show Robot Visual: true
-        Show Trail: false
-        State Display Time: 0.05 s
-        Trail Step Size: 1
-        Trajectory Topic: display_planned_path
-        Use Sim Time: false
-      Planning Metrics:
-        Payload: 1
-        Show Joint Torques: false
-        Show Manipulability: false
-        Show Manipulability Index: false
-        Show Weight Limit: false
-        TextHeight: 0.07999999821186066
-      Planning Request:
-        Colliding Link Color: 255; 0; 0
-        Goal State Alpha: 1
-        Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0
-        Joint Violation Color: 255; 0; 255
-        Planning Group: arm_0
-        Query Goal State: true
-        Query Start State: false
-        Show Workspace: false
-        Start State Alpha: 1
-        Start State Color: 0; 255; 0
-      Planning Scene Topic: monitored_planning_scene
-      Robot Description: robot_description
-      Scene Geometry:
-        Scene Alpha: 1
-        Scene Color: 50; 230; 50
-        Scene Display Time: 0.009999999776482582
-        Show Scene Geometry: true
-        Voxel Coloring: Z-Axis
-        Voxel Rendering: Occupied Voxels
-      Scene Robot:
-        Attached Body Color: 150; 50; 150
-        Links:
-          All Links Enabled: true
-          Expand Joint Details: false
-          Expand Link Details: false
-          Expand Tree: false
-          Link Tree Style: Links in Alphabetic Order
-          arch_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_end_effector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          arm_0_forearm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_gripper_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_left_finger_dist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_left_finger_prox_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_right_finger_dist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_gripper_right_finger_prox_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_lower_wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          arm_0_upper_wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          base_footprint:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          button_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_0_camera_center:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_0_camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_left_camera_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_left_camera_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_right_camera_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_0_right_camera_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          charger_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          chassis_left_suspension_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          chassis_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          chassis_right_suspension_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          default_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          estop_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          eth_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_hinge_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          fath_pivot_0_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_bumper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_bumper_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_left_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_left_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_right_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          front_right_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          front_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gps_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          imu_0_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          imu_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_suspension_beam_front_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_suspension_beam_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_suspension_beam_rear_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_suspension_beam_spacer_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lidar2d_0_laser:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lidar2d_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_bumper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_bumper_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_left_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_left_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_left_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_right_motor_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          rear_right_motor_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rear_right_wheel_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          right_suspension_beam_front_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_suspension_beam_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          right_suspension_beam_rear_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          right_suspension_beam_spacer_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          top_plate_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          top_plate_mount_a1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_a9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_b9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_c9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_d9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          top_plate_mount_e9:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_face:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_lidar_mount:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wireless_charger_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-        Robot Alpha: 0.5
-        Show Robot Collision: false
-        Show Robot Visual: true
-      Value: true
-      Velocity_Scaling_Factor: 0.5
     - Class: moveit_task_constructor/Motion Planning Tasks
       Enabled: true
       Interrupt Display: false
@@ -1613,8 +571,512 @@ Visualization Manager:
       State Display Time: 0.05 s
       Task Solution Topic: /a300_00036/solution
       Tasks:
-        Move to Config Task: 1
+        pick_place_task: 10
       Trail Step Size: 1
+      Value: true
+    - Class: moveit_rviz_plugin/PlanningScene
+      Enabled: true
+      Move Group Namespace: ""
+      Name: PlanningScene
+      Planning Scene Topic: /monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 0.8999999761581421
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.009999999776482582
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          arch_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_end_effector_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          arm_0_forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_gripper_gripper_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_gripper_left_finger_dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_gripper_left_finger_prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_gripper_right_finger_dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_gripper_right_finger_prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_lower_wrist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm_0_upper_wrist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          button_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_0_camera_center:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_0_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_0_left_camera_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_0_left_camera_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_0_right_camera_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_0_right_camera_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          charger_0_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          chassis_left_suspension_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          chassis_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          chassis_right_suspension_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          default_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          estop_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          eth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fath_pivot_0_hinge_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fath_pivot_0_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fath_pivot_0_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_bumper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_bumper_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_left_motor_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_left_motor_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_left_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_right_motor_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_right_motor_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_right_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gps_0_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imu_0_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          imu_0_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_suspension_beam_front_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_suspension_beam_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_suspension_beam_rear_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_suspension_beam_spacer_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          lidar2d_0_laser:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          lidar2d_0_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rear_bumper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rear_bumper_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          rear_left_motor_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rear_left_motor_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          rear_left_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rear_right_motor_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rear_right_motor_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          rear_right_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_suspension_beam_front_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_suspension_beam_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_suspension_beam_rear_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_suspension_beam_spacer_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          top_plate_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          top_plate_mount_a1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_a9:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_b9:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_c9:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_d9:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          top_plate_mount_e9:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wireless_charger_face:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wireless_charger_lidar_mount:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wireless_charger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Robot Alpha: 1
+        Show Robot Collision: false
+        Show Robot Visual: true
       Value: true
   Enabled: true
   Global Options:
@@ -1634,7 +1096,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.1109278202056885
+      Distance: 4
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1649,30 +1111,26 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.46479731798171997
+      Pitch: 0.43500006198883057
       Target Frame: base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 4.468173980712891
+      Yaw: 4.5831708908081055
     Saved: ~
 Window Geometry:
   " - Slider":
     collapsed: false
   Displays:
     collapsed: false
-  Height: 1011
+  Height: 1043
   Hide Left Dock: false
-  Hide Right Dock: false
+  Hide Right Dock: true
   Motion Planning Tasks:
     collapsed: false
-  MotionPlanning:
-    collapsed: false
-  MotionPlanning - Trajectory Slider:
-    collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000002b400000395fc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004400fffffffb000000100044006900730070006c006100790073010000003f00000137000000cc00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000017c000002580000019600fffffffb0000001200530065006c0065006300740069006f006e000000034d0000005c0000005d00fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000004400ffffff00000001000001cb00000395fc0200000001fc0000003f000003950000010b0100001efa000000000100000002fb0000002a004d006f00740069006f006e00200050006c0061006e006e0069006e00670020005400610073006b00730100000000ffffffff000000cb00fffffffb0000000a005600690065007700730100000573000001cb0000010000ffffff000002b30000039500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000002b4000003b5fc0200000006fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb000000100044006900730070006c006100790073010000003f00000274000000cc00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000220000001d40000000000000000fb0000001200530065006c0065006300740069006f006e000000034d0000005c0000005d00fffffffb000000120020002d00200053006c00690064006500720000000000ffffffff0000004400fffffffb0000002a004d006f00740069006f006e00200050006c0061006e006e0069006e00670020005400610073006b007301000002b90000013b000000ec00ffffff00000001000001cb00000416fc0200000001fb0000000a00560069006500770073000000003d00000416000000a900ffffff000004c6000003b500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Views:
-    collapsed: false
-  Width: 1854
-  X: 1986
-  Y: 32
+    collapsed: true
+  Width: 1920
+  X: 0
+  Y: 0
