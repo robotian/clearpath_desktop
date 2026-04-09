@@ -52,6 +52,65 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        arm_0_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_end_effector_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        arm_0_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_gripper_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_left_finger_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_left_finger_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_right_finger_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_right_finger_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_lower_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_upper_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
@@ -90,11 +149,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_rail_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         chassis_link:
           Alpha: 1
           Show Axes: false
@@ -105,20 +159,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
         depth2scan_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        fath_pivot_0_hinge_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fath_pivot_0_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fath_pivot_0_mount:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -150,6 +190,24 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        imu_1_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lidar2d_0_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        lidar2d_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         rear_0_mount:
           Alpha: 1
           Show Axes: false
@@ -169,11 +227,24 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        top_plate_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         top_plate_rail_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        zed_mount_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Mass Properties:
         Inertia: false
         Mass: false
@@ -189,11 +260,31 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_footprint:
+        arm_0_arm_link:
+          Value: true
+        arm_0_base_link:
+          Value: true
+        arm_0_end_effector_link:
+          Value: true
+        arm_0_forearm_link:
+          Value: true
+        arm_0_gripper_gripper_base_link:
+          Value: true
+        arm_0_gripper_left_finger_dist_link:
+          Value: true
+        arm_0_gripper_left_finger_prox_link:
+          Value: true
+        arm_0_gripper_right_finger_dist_link:
+          Value: true
+        arm_0_gripper_right_finger_prox_link:
+          Value: true
+        arm_0_lower_wrist_link:
+          Value: true
+        arm_0_shoulder_link:
+          Value: true
+        arm_0_upper_wrist_link:
           Value: true
         base_link:
-          Value: true
-        base_mocap:
           Value: true
         camera_0_camera_center:
           Value: true
@@ -219,19 +310,11 @@ Visualization Manager:
           Value: true
         camera_1_link:
           Value: true
-        camera_rail_link:
-          Value: true
         chassis_link:
           Value: true
         default_mount:
           Value: true
         depth2scan_link:
-          Value: true
-        fath_pivot_0_hinge_link:
-          Value: true
-        fath_pivot_0_link:
-          Value: true
-        fath_pivot_0_mount:
           Value: true
         front_0_mount:
           Value: true
@@ -245,6 +328,14 @@ Visualization Manager:
           Value: true
         imu_0_link:
           Value: true
+        imu_1_base_link:
+          Value: true
+        imu_1_link:
+          Value: true
+        lidar2d_0_laser:
+          Value: true
+        lidar2d_0_link:
+          Value: true
         odom:
           Value: true
         rear_0_mount:
@@ -255,9 +346,15 @@ Visualization Manager:
           Value: true
         rear_right_wheel_link:
           Value: true
+        top_plate_front_link:
+          Value: true
+        top_plate_link:
+          Value: true
         top_plate_rail_link:
           Value: true
-      Marker Scale: 0.5
+        zed_mount_link:
+          Value: true
+      Marker Scale: 0.20000000298023224
       Name: TF
       Show Arrows: true
       Show Axes: true
@@ -265,33 +362,51 @@ Visualization Manager:
       Tree:
         odom:
           base_link:
-            camera_1_bottom_screw_frame:
-              camera_1_link:
-                camera_1_color_frame:
-                  camera_1_color_optical_frame:
-                    {}
-                camera_1_depth_frame:
-                  camera_1_depth_optical_frame:
-                    {}
             chassis_link:
               default_mount:
                 front_0_mount:
                   {}
+                imu_1_base_link:
+                  imu_1_link:
+                    {}
                 rear_0_mount:
-                  {}
+                  arm_0_base_link:
+                    arm_0_shoulder_link:
+                      arm_0_arm_link:
+                        arm_0_forearm_link:
+                          arm_0_lower_wrist_link:
+                            arm_0_upper_wrist_link:
+                              arm_0_end_effector_link:
+                                arm_0_gripper_gripper_base_link:
+                                  arm_0_gripper_left_finger_prox_link:
+                                    arm_0_gripper_left_finger_dist_link:
+                                      {}
+                                  arm_0_gripper_right_finger_prox_link:
+                                    arm_0_gripper_right_finger_dist_link:
+                                      {}
+                                camera_1_bottom_screw_frame:
+                                  camera_1_link:
+                                    camera_1_color_frame:
+                                      camera_1_color_optical_frame:
+                                        {}
+                                    camera_1_depth_frame:
+                                      camera_1_depth_optical_frame:
+                                        {}
                 top_plate_rail_link:
-                  camera_rail_link:
-                    fath_pivot_0_link:
-                      fath_pivot_0_hinge_link:
-                        fath_pivot_0_mount:
-                          camera_0_camera_link:
-                            camera_0_camera_center:
-                              camera_0_left_camera_frame:
-                                camera_0_left_camera_frame_optical:
-                                  {}
-                              camera_0_right_camera_frame:
-                                camera_0_right_camera_frame_optical:
-                                  {}
+                  top_plate_link:
+                    top_plate_front_link:
+                      lidar2d_0_link:
+                        lidar2d_0_laser:
+                          {}
+                      zed_mount_link:
+                        camera_0_camera_link:
+                          camera_0_camera_center:
+                            camera_0_left_camera_frame:
+                              camera_0_left_camera_frame_optical:
+                                {}
+                            camera_0_right_camera_frame:
+                              camera_0_right_camera_frame_optical:
+                                {}
               front_left_wheel_link:
                 {}
               front_right_wheel_link:
@@ -312,6 +427,40 @@ Visualization Manager:
             {}
       Update Interval: 0
       Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 1535
+      Min Color: 0; 0; 0
+      Min Intensity: 222
+      Name: LaserScan
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /j100_0921/sensors/lidar2d_0/scan
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -327,25 +476,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.340817451477051
+      Distance: 1.025808572769165
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.16784177720546722
+        Y: -0.0686996728181839
+        Z: 0.05479424074292183
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8003979921340942
+      Pitch: 0.7703973054885864
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.920380115509033
+      Yaw: 1.8453924655914307
     Saved: ~
 Window Geometry:
   Displays:

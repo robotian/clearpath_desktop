@@ -59,7 +59,7 @@ def generate_launch_description():
 
     arg_rviz_config = DeclareLaunchArgument(
         name='config',
-        default_value='robot_jackal.rviz',
+        default_value='nav2_j100.rviz',
     )
 
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')

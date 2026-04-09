@@ -1,21 +1,15 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 0
+    Help Height: 87
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /Controller1
-        - /Controller1/MPPI1
-        - /Odometry1
-        - /Odometry1/Shape1
-        - /Odometry2
-        - /Odometry2/Shape1
-      Splitter Ratio: 0.5833333134651184
-    Tree Height: 344
+        - /Image1
+      Splitter Ratio: 0.43536120653152466
+    Tree Height: 588
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -62,20 +56,231 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: robot_description
-      Enabled: false
+      Enabled: true
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        arm_0_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_end_effector_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        arm_0_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_gripper_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_left_finger_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_left_finger_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_right_finger_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_right_finger_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_lower_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_upper_wrist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_0_camera_center:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_0_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_0_left_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_0_left_camera_frame_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_0_right_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_0_right_camera_frame_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_1_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        default_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        depth2scan_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_0_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_fender_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gps_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gps_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gps_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_1_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        lidar2d_0_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        lidar2d_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_0_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_fender_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_mount_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_plate_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_rail_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_shelf_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        zed_mount_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Mass Properties:
         Inertia: false
         Mass: false
       Name: RobotModel
       TF Prefix: ""
       Update Interval: 0
-      Value: false
+      Value: true
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
       Enabled: true
@@ -84,67 +289,117 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        base:
-          Value: false
+        arm_0_arm_link:
+          Value: true
+        arm_0_base_link:
+          Value: true
+        arm_0_end_effector_link:
+          Value: true
+        arm_0_forearm_link:
+          Value: true
+        arm_0_gripper_gripper_base_link:
+          Value: true
+        arm_0_gripper_left_finger_dist_link:
+          Value: true
+        arm_0_gripper_left_finger_prox_link:
+          Value: true
+        arm_0_gripper_right_finger_dist_link:
+          Value: true
+        arm_0_gripper_right_finger_prox_link:
+          Value: true
+        arm_0_lower_wrist_link:
+          Value: true
+        arm_0_shoulder_link:
+          Value: true
+        arm_0_upper_wrist_link:
+          Value: true
         base_footprint:
-          Value: false
+          Value: true
         base_link:
           Value: true
         base_mocap:
           Value: true
         camera_0_camera_center:
-          Value: false
+          Value: true
         camera_0_camera_link:
-          Value: false
+          Value: true
         camera_0_left_camera_frame:
-          Value: false
+          Value: true
         camera_0_left_camera_frame_optical:
-          Value: false
+          Value: true
         camera_0_right_camera_frame:
-          Value: false
+          Value: true
         camera_0_right_camera_frame_optical:
-          Value: false
+          Value: true
+        camera_1_bottom_screw_frame:
+          Value: true
+        camera_1_color_frame:
+          Value: true
+        camera_1_color_optical_frame:
+          Value: true
+        camera_1_depth_frame:
+          Value: true
+        camera_1_depth_optical_frame:
+          Value: true
+        camera_1_link:
+          Value: true
         chassis_link:
-          Value: false
+          Value: true
         default_mount:
-          Value: false
+          Value: true
         depth2scan_link:
-          Value: false
-        fath_pivot_0_hinge_link:
-          Value: false
-        fath_pivot_0_link:
-          Value: false
-        fath_pivot_0_mount:
-          Value: false
+          Value: true
         front_0_mount:
-          Value: false
+          Value: true
         front_fender_link:
-          Value: false
+          Value: true
         front_left_wheel_link:
-          Value: false
+          Value: true
         front_right_wheel_link:
-          Value: false
+          Value: true
         gps_0_link:
-          Value: false
+          Value: true
+        gps_1_link:
+          Value: true
+        gps_2_link:
+          Value: true
         imu_0_link:
-          Value: false
+          Value: true
+        imu_1_base_link:
+          Value: true
+        imu_1_link:
+          Value: true
         jackal_charger_april:
-          Value: false
+          Value: true
+        lidar2d_0_laser:
+          Value: true
+        lidar2d_0_link:
+          Value: true
         map:
-          Value: false
+          Value: true
         odom:
           Value: true
         rear_0_mount:
-          Value: false
+          Value: true
         rear_fender_link:
-          Value: false
+          Value: true
         rear_left_wheel_link:
-          Value: false
+          Value: true
         rear_right_wheel_link:
-          Value: false
-        test:
-          Value: false
-      Marker Scale: 1
+          Value: true
+        top_mount_link:
+          Value: true
+        top_plate_front_link:
+          Value: true
+        top_plate_link:
+          Value: true
+        top_plate_rail_link:
+          Value: true
+        top_shelf_link:
+          Value: true
+        zed_mount_link:
+          Value: true
+      Marker Scale: 0.20000000298023224
       Name: TF
       Show Arrows: true
       Show Axes: true
@@ -159,24 +414,55 @@ Visualization Manager:
                 chassis_link:
                   default_mount:
                     front_0_mount:
-                      fath_pivot_0_link:
-                        fath_pivot_0_hinge_link:
-                          fath_pivot_0_mount:
+                      {}
+                    rear_0_mount:
+                      arm_0_base_link:
+                        arm_0_shoulder_link:
+                          arm_0_arm_link:
+                            arm_0_forearm_link:
+                              arm_0_lower_wrist_link:
+                                arm_0_upper_wrist_link:
+                                  arm_0_end_effector_link:
+                                    arm_0_gripper_gripper_base_link:
+                                      arm_0_gripper_left_finger_prox_link:
+                                        arm_0_gripper_left_finger_dist_link:
+                                          {}
+                                      arm_0_gripper_right_finger_prox_link:
+                                        arm_0_gripper_right_finger_dist_link:
+                                          {}
+                                    camera_1_bottom_screw_frame:
+                                      camera_1_link:
+                                        camera_1_color_frame:
+                                          camera_1_color_optical_frame:
+                                            {}
+                                        camera_1_depth_frame:
+                                          camera_1_depth_optical_frame:
+                                            {}
+                    top_mount_link:
+                      imu_1_base_link:
+                        imu_1_link:
+                          {}
+                      top_shelf_link:
+                        gps_1_link:
+                          {}
+                        gps_2_link:
+                          {}
+                    top_plate_rail_link:
+                      top_plate_link:
+                        top_plate_front_link:
+                          lidar2d_0_link:
+                            lidar2d_0_laser:
+                              {}
+                          zed_mount_link:
                             camera_0_camera_link:
                               camera_0_camera_center:
                                 camera_0_left_camera_frame:
                                   camera_0_left_camera_frame_optical:
-                                    base:
-                                      {}
                                     jackal_charger_april:
-                                      {}
-                                    test:
                                       {}
                                 camera_0_right_camera_frame:
                                   camera_0_right_camera_frame_optical:
                                     {}
-                    rear_0_mount:
-                      {}
                   front_left_wheel_link:
                     {}
                   front_right_wheel_link:
@@ -227,7 +513,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Best Effort
-        Value: /j100_0921/sensors/camera_0/scan
+        Value: /a300_00036/sensors/lidar2d_0/scan_filtered
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -512,34 +798,6 @@ Visualization Manager:
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
-        - Alpha: 1
-          Buffer Length: 1
-          Class: rviz_default_plugins/Path
-          Color: 28; 113; 216
-          Enabled: true
-          Head Diameter: 0.30000001192092896
-          Head Length: 0.20000000298023224
-          Length: 0.30000001192092896
-          Line Style: Lines
-          Line Width: 0.029999999329447746
-          Name: MPPI
-          Offset:
-            X: 0
-            Y: 0
-            Z: 0
-          Pose Color: 255; 85; 255
-          Pose Style: None
-          Radius: 0.029999999329447746
-          Shaft Diameter: 0.10000000149011612
-          Shaft Length: 0.10000000149011612
-          Topic:
-            Depth: 5
-            Durability Policy: Volatile
-            Filter size: 10
-            History Policy: Keep Last
-            Reliability Policy: Reliable
-            Value: /j100_0921/optimal_trajectory
-          Value: true
       Enabled: true
       Name: Controller
     - Class: rviz_default_plugins/MarkerArray
@@ -554,83 +812,59 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: waypoints
       Value: true
-    - Angle Tolerance: 0.10000000149011612
-      Class: rviz_default_plugins/Odometry
-      Covariance:
-        Orientation:
-          Alpha: 0.5
-          Color: 255; 255; 127
-          Color Style: Unique
-          Frame: Local
-          Offset: 1
-          Scale: 1
-          Value: true
-        Position:
-          Alpha: 0.30000001192092896
-          Color: 204; 51; 204
-          Scale: 1
-          Value: true
-        Value: true
-      Enabled: false
-      Keep: 200
-      Name: Odometry
-      Position Tolerance: 0.10000000149011612
-      Shape:
-        Alpha: 0.5
-        Axes Length: 0.5
-        Axes Radius: 0.05000000074505806
-        Color: 255; 25; 0
-        Head Length: 0.20000000298023224
-        Head Radius: 0.05000000074505806
-        Shaft Length: 0.20000000298023224
-        Shaft Radius: 0.029999999329447746
-        Value: Arrow
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Filter size: 10
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /j100_0921/ground_truth/odom
-      Value: false
-    - Angle Tolerance: 0.10000000149011612
-      Class: rviz_default_plugins/Odometry
-      Covariance:
-        Orientation:
-          Alpha: 0.5
-          Color: 255; 255; 127
-          Color Style: Unique
-          Frame: Local
-          Offset: 1
-          Scale: 1
-          Value: true
-        Position:
-          Alpha: 0.30000001192092896
-          Color: 204; 51; 204
-          Scale: 1
-          Value: true
-        Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz_default_plugins/Pose
+      Color: 255; 25; 0
       Enabled: true
-      Keep: 50
-      Name: Odometry
-      Position Tolerance: 0.10000000149011612
-      Shape:
-        Alpha: 0.699999988079071
-        Axes Length: 0.5
-        Axes Radius: 0.05000000074505806
-        Color: 46; 194; 126
-        Head Length: 0.20000000298023224
-        Head Radius: 0.05000000074505806
-        Shaft Length: 0.20000000298023224
-        Shaft Radius: 0.029999999329447746
-        Value: Arrow
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Detected Dock Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
       Topic:
         Depth: 5
         Durability Policy: Volatile
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /j100_0921/sensors/camera_0/stereolabs_zed/odom
+        Value: /j100_0921/detected_dock_pose
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz_default_plugins/Pose
+      Color: 51; 209; 122
+      Enabled: true
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Dock Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /j100_0921/dock_pose
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /j100_0921/sensors/camera_1/color/decompressed
       Value: true
   Enabled: true
   Global Options:
@@ -669,7 +903,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -1.5550023317337036
+      Angle: -1.0250006914138794
       Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -679,21 +913,23 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 208.2285614013672
+      Scale: 129.87745666503906
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
-      X: -1.272809386253357
-      Y: -0.5073497295379639
+      X: -1.0867934226989746
+      Y: -0.05139677971601486
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
   Height: 1043
   Hide Left Dock: false
-  Hide Right Dock: true
+  Hide Right Dock: false
+  Image:
+    collapsed: false
   Navigation 2:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a000003b5fc0200000009fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001e005200650061006c00730065006e0073006500430061006d00650072006100000002c6000000c10000000000000000fb000000100044006900730070006c006100790073010000003f00000198000000cc00fffffffb0000001200530065006c0065006300740069006f006e02000005ae000000d70000016a00000066fc000001dd00000217000002170100001efa000000010100000002fb0000000a005600690065007700730100000000ffffffff0000010000fffffffb00000018004e0061007600690067006100740069006f006e0020003201000000000000016a0000013a00ffffff000000010000010f0000034afc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000780000000a9fc0100000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000000000007800000009b00fffffffb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000610000003b500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001c7000003b5fc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005d00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f000002e3000000cc00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001e005200650061006c00730065006e0073006500430061006d00650072006100000002c6000000c10000000000000000fb0000000a0049006d0061006700650100000328000000cc0000001700ffffff000000010000013a000003b5fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fc0000003f000003b5000002020100001efa000000000100000002fb00000018004e0061007600690067006100740069006f006e002000320100000000ffffffff0000013a00fffffffb0000000a0056006900650077007301000006710000010f0000010000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000473000003b500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Tool Properties:
