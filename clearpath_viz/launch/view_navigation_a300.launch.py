@@ -59,7 +59,7 @@ def generate_launch_description():
 
     arg_rviz_config = DeclareLaunchArgument(
         name='config',
-        default_value='robot_a200_0284.rviz',
+        default_value='nav2_a300.rviz',
     )
 
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')
@@ -71,45 +71,31 @@ def generate_launch_description():
     group_view_model = GroupAction([
         PushRosNamespace(namespace),
         Node(
-            name='image_compressed_to_raw_d435',
+            name='image_compressed_to_raw_zed',
             package='image_transport',
             executable='republish',
             remappings=[
-                ('in/compressed', 'sensors/camera_0/color/compressed'),
-                ('out', 'sensors/camera_0/color/decompressed'),
+                ('in/compressed', '/a300_00036/sensors/camera_0/color/image/compressed'),
+                ('out', '/a300_00036/sensors/camera_0/color/image/decompressed'),
             ],
             parameters=[{
                 'in_transport': 'compressed',
                 'out_transport': 'raw',
             }],
-        ),
-
+         ),
         Node(
-            name='image_compressed_to_raw_Gen3_camera',
+            name='image_compressed_to_raw_d405',
             package='image_transport',
-            executable='republish',
+            executable='republish',  
             remappings=[
-                ('in/compressed', 'manipulators/arm_0_color_camera/image_raw/compressed'),
-                ('out', 'manipulators/arm_0_color_camera/image_raw/decompressed'),
+                ('in/compressed', '/a300_00036/sensors/camera_1/color/compressed'),
+                ('out', '/a300_00036/sensors/camera_1/color/decompressed'),
             ],
             parameters=[{
                 'in_transport': 'compressed',
                 'out_transport': 'raw',
             }],
-        ),
-        # Node(
-        #     name='image_compressed_to_raw_d405',
-        #     package='image_transport',
-        #     executable='republish',  
-        #     remappings=[
-        #         ('in/compressed', '/j100_0921/sensors/camera_1/color/compressed'),
-        #         ('out', '/j100_0921/sensors/camera_1/color/decompressed'),
-        #     ],
-        #     parameters=[{
-        #         'in_transport': 'compressed',
-        #         'out_transport': 'raw',
-        #     }],
-        #  ),
+         ),
         Node(package='rviz2',
              executable='rviz2',
             #  name='rviz2',

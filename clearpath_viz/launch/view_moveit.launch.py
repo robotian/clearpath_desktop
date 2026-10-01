@@ -71,7 +71,7 @@ def launch_setup(context, *args, **kwargs):
     # RViz Configuration
     pkg_clearpath_viz = FindPackageShare('clearpath_viz')
     default_config = PathJoinSubstitution(
-        [pkg_clearpath_viz, 'rviz', 'mtc_a300_lite.rviz']
+        [pkg_clearpath_viz, 'rviz', 'moveit.rviz']
     )
 
     context_rviz = default_config.perform(context)
@@ -85,11 +85,39 @@ def launch_setup(context, *args, **kwargs):
     namespaced_config = '/tmp/moveit.rviz'
     write_yaml(namespaced_config, content_rviz)
 
+    # =====================================================================
+    # DEFINE ACCELERATION LIMITS FOR TRAJECTORY TIME PARAMETERIZATION
+    # =====================================================================
+    arm_joints = [
+        'arm_0_joint_1',
+        'arm_0_joint_2',
+        'arm_0_joint_3',
+        'arm_0_joint_4',
+        'arm_0_joint_5',
+        'arm_0_joint_6',
+    ]
+
+    joint_limits_dict = {}
+    for joint in arm_joints:
+        joint_limits_dict[joint] = {
+            'has_velocity_limits': True,
+            'max_velocity': 1.0,           # rad/s
+            'has_acceleration_limits': True,
+            'max_acceleration': 1.57,       # rad/s^2 (adjust based on Gen3 Lite specs)
+        }
+
+    robot_description_planning = {
+        'robot_description_planning': {
+            'joint_limits': joint_limits_dict
+        }
+    }
+
     # Remappings
     remappings = [
         # Standard
         ('/tf', 'tf'),
         ('/tf_static', 'tf_static'),
+        ('joint_states', 'platform/joint_states'),
     ]
 
     # Remappings for MoveIt!
@@ -110,6 +138,19 @@ def launch_setup(context, *args, **kwargs):
                 'kinematics_solver_search_resolution': 0.005,
                 'kinematics_solver_timeout': 0.005,
             }}
+            # this does not work
+            # {'arm_%s' % i: {
+            #     'kinematics_solver': 'pick_ik/PickIkPlugin',
+            #     'kinematics_solver_search_resolution': 0.005,
+            #     'kinematics_solver_timeout': 0.005,
+            #     'mode': 'local',
+            #     'stop_optimization_on_valid_solution': True,
+            #     'position_threshold': 0.01,
+            #     'cost_threshold': 0.1  ,
+            #     'minimal_displacement_weight':  0.001,
+            #     'position_scale':  1.0,
+            #     'rotation_scale':  1.0,
+            # }}
         )
 
     return [
@@ -118,9 +159,12 @@ def launch_setup(context, *args, **kwargs):
             Node(
                 package='rviz2',
                 executable='rviz2',
-                # name='rviz2',
+                # name='rviz2_moveit',
                 arguments=['-d', namespaced_config],
-                parameters=[parameters],
+                parameters=[
+                    parameters, 
+                    # robot_description_planning,
+                ],
                 remappings=remappings,
                 output='screen'
             )

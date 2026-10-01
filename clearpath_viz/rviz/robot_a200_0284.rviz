@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /RobotModel1
+        - /FrontScan1
         - /FrontCam1
         - /MoCap1/Markers1
         - /MoCap1/Rigidbody Pose1
@@ -87,6 +88,51 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        arm_0_gripper_robotiq_85_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_left_finger_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_left_finger_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_left_inner_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_left_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_right_finger_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_right_finger_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_right_inner_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_0_gripper_robotiq_85_right_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         arm_0_half_arm_1_link:
           Alpha: 1
           Show Axes: false
@@ -152,6 +198,15 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        front_camera_mount_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_rail_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         front_left_wheel_link:
           Alpha: 1
           Show Axes: false
@@ -248,6 +303,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        top_plate_user_rail_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         top_plate_user_rail_link:
           Alpha: 1
           Show Axes: false
@@ -281,6 +340,24 @@ Visualization Manager:
         arm_0_end_effector_link:
           Value: true
         arm_0_forearm_link:
+          Value: true
+        arm_0_gripper_robotiq_85_base_link:
+          Value: true
+        arm_0_gripper_robotiq_85_left_finger_link:
+          Value: true
+        arm_0_gripper_robotiq_85_left_finger_tip_link:
+          Value: true
+        arm_0_gripper_robotiq_85_left_inner_knuckle_link:
+          Value: true
+        arm_0_gripper_robotiq_85_left_knuckle_link:
+          Value: true
+        arm_0_gripper_robotiq_85_right_finger_link:
+          Value: true
+        arm_0_gripper_robotiq_85_right_finger_tip_link:
+          Value: true
+        arm_0_gripper_robotiq_85_right_inner_knuckle_link:
+          Value: true
+        arm_0_gripper_robotiq_85_right_knuckle_link:
           Value: true
         arm_0_half_arm_1_link:
           Value: true
@@ -319,6 +396,10 @@ Visualization Manager:
         front_bumper_link:
           Value: true
         front_bumper_mount:
+          Value: true
+        front_camera_mount_link:
+          Value: true
+        front_camera_rail_link:
           Value: true
         front_left_wheel_link:
           Value: true
@@ -366,6 +447,8 @@ Visualization Manager:
           Value: true
         top_plate_rear_mount:
           Value: true
+        top_plate_user_rail_front_link:
+          Value: true
         top_plate_user_rail_link:
           Value: true
       Marker Scale: 0.20000000298023224
@@ -374,77 +457,94 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          default_mount:
-            imu_0_base_link:
-              imu_0_link:
-                {}
-            top_plate_user_rail_link:
-              top_plate_link:
-                top_plate_base_link:
-                  arm_mount_plate_link:
-                    arm_0_base_link:
-                      arm_0_shoulder_link:
-                        arm_0_half_arm_1_link:
-                          arm_0_half_arm_2_link:
-                            arm_0_forearm_link:
-                              arm_0_spherical_wrist_1_link:
-                                arm_0_spherical_wrist_2_link:
-                                  arm_0_bracelet_link:
-                                    arm_0_end_effector_link:
-                                      arm_0_camera_color_frame:
-                                        {}
-                                      arm_0_camera_depth_frame:
-                                        {}
-                                      arm_0_camera_link:
-                                        {}
-                  lidar2d_0_link:
-                    lidar2d_0_laser:
-                      {}
-                  rail_link:
-                    {}
-                  rail_post_left_link:
-                    {}
-                  rail_post_right_link:
-                    {}
-                top_plate_default_mount:
-                  {}
-                top_plate_front_mount:
-                  camera_0_bottom_screw_frame:
-                    camera_0_link:
-                      camera_0_color_frame:
-                        camera_0_color_optical_frame:
-                          {}
-                      camera_0_depth_frame:
-                        camera_0_depth_optical_frame:
-                          {}
-                top_plate_rear_mount:
-                  {}
-          front_bumper_mount:
-            front_bumper_base_link:
-              front_bumper_link:
-                {}
-          front_left_wheel_link:
-            {}
-          front_right_wheel_link:
-            {}
-          inertial_link:
-            {}
-          rear_bumper_mount:
-            rear_bumper_base_link:
-              rear_bumper_link:
-                {}
-          rear_left_wheel_link:
-            {}
-          rear_right_wheel_link:
-            {}
-          top_chassis_link:
-            {}
         base_mocap:
-          base_footprint:
-            {}
           map:
-            odom:
+            {}
+        odom:
+          base_link:
+            base_footprint:
+              {}
+            default_mount:
+              imu_0_base_link:
+                imu_0_link:
+                  {}
+              top_plate_user_rail_link:
+                top_plate_link:
+                  top_plate_base_link:
+                    arm_mount_plate_link:
+                      arm_0_base_link:
+                        arm_0_shoulder_link:
+                          arm_0_half_arm_1_link:
+                            arm_0_half_arm_2_link:
+                              arm_0_forearm_link:
+                                arm_0_spherical_wrist_1_link:
+                                  arm_0_spherical_wrist_2_link:
+                                    arm_0_bracelet_link:
+                                      arm_0_end_effector_link:
+                                        arm_0_camera_color_frame:
+                                          {}
+                                        arm_0_camera_depth_frame:
+                                          {}
+                                        arm_0_camera_link:
+                                          {}
+                                        arm_0_gripper_robotiq_85_base_link:
+                                          arm_0_gripper_robotiq_85_left_inner_knuckle_link:
+                                            {}
+                                          arm_0_gripper_robotiq_85_left_knuckle_link:
+                                            arm_0_gripper_robotiq_85_left_finger_link:
+                                              arm_0_gripper_robotiq_85_left_finger_tip_link:
+                                                {}
+                                          arm_0_gripper_robotiq_85_right_inner_knuckle_link:
+                                            {}
+                                          arm_0_gripper_robotiq_85_right_knuckle_link:
+                                            arm_0_gripper_robotiq_85_right_finger_link:
+                                              arm_0_gripper_robotiq_85_right_finger_tip_link:
+                                                {}
+                    lidar2d_0_link:
+                      lidar2d_0_laser:
+                        {}
+                    rail_link:
+                      {}
+                    rail_post_left_link:
+                      {}
+                    rail_post_right_link:
+                      {}
+                  top_plate_default_mount:
+                    {}
+                  top_plate_front_mount:
+                    {}
+                  top_plate_rear_mount:
+                    {}
+                top_plate_user_rail_front_link:
+                  front_camera_rail_link:
+                    front_camera_mount_link:
+                      camera_0_bottom_screw_frame:
+                        camera_0_link:
+                          camera_0_color_frame:
+                            camera_0_color_optical_frame:
+                              {}
+                          camera_0_depth_frame:
+                            camera_0_depth_optical_frame:
+                              {}
+            front_bumper_mount:
+              front_bumper_base_link:
+                front_bumper_link:
+                  {}
+            front_left_wheel_link:
+              {}
+            front_right_wheel_link:
+              {}
+            inertial_link:
+              {}
+            rear_bumper_mount:
+              rear_bumper_base_link:
+                rear_bumper_link:
+                  {}
+            rear_left_wheel_link:
+              {}
+            rear_right_wheel_link:
+              {}
+            top_chassis_link:
               {}
       Update Interval: 0
       Value: true
@@ -457,15 +557,15 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz_default_plugins/LaserScan
-      Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color: 249; 240; 107
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 781
+      Max Intensity: 3854
       Min Color: 0; 0; 0
-      Min Intensity: 284
+      Min Intensity: 269
       Name: FrontScan
       Position Transformer: XYZ
       Selectable: true
@@ -561,7 +661,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: map
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -573,7 +673,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.6904053688049316
+      Distance: 3.8441081047058105
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -588,10 +688,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7497965693473816
+      Pitch: 0.8297966122627258
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.668531656265259
+      Yaw: 2.3535287380218506
     Saved: ~
 Window Geometry:
   Displays:
